@@ -1,5 +1,5 @@
 let editButtonProfile = document.querySelector('.profile-info__edit-button');
-let close_button = document.querySelector('.popup__close-button');
+let closeButtonPopup = document.querySelector('.popup__close-button');
 let popup = document.querySelector('.popup');
 let nameProfile = document.querySelector('.profile-info__name');
 let jobProfile = document.querySelector('.profile-info__job');
@@ -40,5 +40,7 @@ function formSubmitHandler(evt) {
 }
 
 editButtonProfile.addEventListener('click', popup_opened);
-close_button.addEventListener('click', popup_closed);
+
+closeButtonPopup.addEventListener('click', popup_closed);
+
 formElement.addEventListener('submit', formSubmitHandler);
