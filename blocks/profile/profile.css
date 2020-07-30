@@ -1,0 +1,11 @@
+@import url(./__add-button/profile__add-button.css);
+
+.profile {
+    margin-top: 40px;
+    max-width: 882px;
+    max-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}

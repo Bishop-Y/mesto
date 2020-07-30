@@ -1,0 +1,11 @@
+@import url(./__avatar/profile-info__avatar.css);
+@import url(./__information/profile-info__information.css);
+@import url(../profile-info/__name/profile-info__name.css);
+@import url(./__job/profile-info__job.css);
+@import url(./__edit-button/profile-info__edit-button.css);
+
+.profile-info{
+    max-width: 486px;
+    display: flex;
+    align-items: flex-start;
+}
