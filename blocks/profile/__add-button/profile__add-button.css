@@ -1,6 +1,10 @@
 .profile__add-button {
     align-self: center;
-    max-width: 150px;
+    min-width: 150px;
+    min-height: 50px;
+    background-image: url(../../../images/profile-info__add-button.svg);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
 }
 
 .profile__add-button:hover {

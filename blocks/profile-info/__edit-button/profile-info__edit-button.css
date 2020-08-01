@@ -1,5 +1,9 @@
 .profile-info__edit-button {
-    max-width: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    background-image: url(../../../images/profile-info__edit-button.svg);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
 }
 
 .profile-info__edit-button:hover {

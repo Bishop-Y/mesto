@@ -1,0 +1,10 @@
+.photo-grid__like-button {
+    border: 0px;
+    background-image: url(../../../images/photo-grid__like-button.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    align-self: center;
+    min-width: 21px;
+    min-height: 18px;
+}
