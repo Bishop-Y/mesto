@@ -6,7 +6,7 @@
 @import url(./__close-button/popup__close-button.css);
 
 .popup{
-    position: fixed;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     left: 0;
     right: 0;
@@ -15,6 +15,7 @@
     display: none;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 615px) {
