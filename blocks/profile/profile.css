@@ -10,13 +10,13 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 881px) {
+@media screen and (max-width: 900px) {
     .profile {
-        max-width: 95%;
+        max-width: 583px;
     }
 }
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 615px) {
     .profile {
         flex-direction: column;
     }

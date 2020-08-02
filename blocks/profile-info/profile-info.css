@@ -10,13 +10,13 @@
     align-items: flex-start;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .profile-info {
         max-width: 426px;
     }
 }
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 615px) {
     .profile-info {
         align-self: center;
         max-width: 282px;
