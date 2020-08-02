@@ -1,5 +1,8 @@
 .popup__container{
     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 430px;
     min-height: 330px;
     background: #FFFFFF;
@@ -20,6 +23,8 @@
 
 @media screen and (max-width: 425px) {
     .popup__container {
-        width: 260px;
+        width: 260px;    
+        top: 20%;
+        transform: translate(-50%, -20%);
     }
 }

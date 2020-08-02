@@ -17,9 +17,3 @@
     align-items: center;
     max-width: 100%;
 }
-
-@media screen and (max-width: 615px) {
-    .popup {
-        padding-bottom: 400px;
-    }
-}
