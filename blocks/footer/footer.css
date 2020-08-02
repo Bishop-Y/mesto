@@ -7,3 +7,17 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width: 900px) {
+    .footer {
+        max-width: 583px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .footer {
+        max-width: 282px;
+        margin-top: 48px;
+        padding-bottom: 36px;
+    }
+}

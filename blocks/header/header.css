@@ -8,3 +8,17 @@
     padding-top: 45px;
     border-bottom: 1px solid rgba(	84, 84, 84, 0.74);
 }
+
+@media screen and (max-width: 881px) {
+    .header {
+        padding-top: 36px;
+        padding-left: 27px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding-top: 27px;
+        height: 64px;
+    }
+}

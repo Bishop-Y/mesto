@@ -15,3 +15,17 @@
     cursor: pointer;
     opacity: 0.7;
 }
+
+@media screen and (max-width: 615px) {
+    .popup__close-button {
+        left: 320px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .popup__close-button {
+        left: 253px;
+        min-width: 37px;
+        min-height: 37px;
+    }
+}

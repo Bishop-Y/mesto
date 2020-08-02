@@ -11,3 +11,15 @@
     color: #000000;
     border-bottom: 1px solid rgba(0, 0 ,0, 0.2);
 }
+
+@media screen and (max-width: 615px) {
+    .popup__job {
+        width: 298px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .popup__job {
+        width: 228px;
+    }
+}

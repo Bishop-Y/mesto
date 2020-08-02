@@ -3,9 +3,21 @@
 .profile {
     margin-top: 40px;
     max-width: 882px;
-    max-height: 120px;
+    min-height: 120px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 881px) {
+    .profile {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .profile {
+        flex-direction: column;
+    }
 }
