@@ -8,6 +8,7 @@ let jobPopup = document.querySelector(`.popup__job`);
 let closeButtonPopup = document.querySelector(`.popup__close-button`);
 
 function popup_opened() {
+
     popup.classList.add(`popup_opened`);
 
     if (nameProfile.textContent !== ``) {
@@ -21,13 +22,16 @@ function popup_opened() {
     } else {
         jobProfile.textContent = jobProfile.textContent;
     }
+    
 }
 
 function popup_closed() {
+
     popup.classList.remove(`popup_opened`);
 }
 
 function formSubmitHandler(evt) {
+
     evt.preventDefault();
 
     let nameInput = namePopup.value;
@@ -37,6 +41,7 @@ function formSubmitHandler(evt) {
     jobProfile.textContent = jobInput;
 
     popup_closed();
+
 }
 
 editButtonProfile.addEventListener(`click`, popup_opened);
