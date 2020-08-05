@@ -8,8 +8,7 @@
     <title> Mesto </title>
 </head>
 
-<body>
-    <div class="page">
+<body class="page">
         <div class="page__content">
 
             <header class="header">
@@ -24,60 +23,62 @@
                         <div class="profile-info__information">
                             <h1 class="profile-info__name">Жак-Ив Кусто</h1>
                             <button class="profile-info__edit-button" type="button" aria-label="Изменить профиль"></button>
-                            <h2 class="profile-info__job">Исследователь Океана</h2>
+                            <p class="profile-info__job">Исследователь Океана</p>
                         </div>
                     </div>
                     <button class="profile__add-button" type="button" aria-label="Добавить фото"></button>
                 </section>
 
                 <section class="photo-grid">
-                    <div class="photo-grid__container">
-                        <img class="photo-grid__image" src="./images/karachaevsk.jpg" alt="karachaevsk">
-                        <div class="photo-grid__information">
-                            <p class="photo-grid__name"> Карачаевск </p>
-                            <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                        </div>
-                    </div>
+                    <ul class="photo-grid__cards">
+                        <li class="photo-grid__container">
+                            <img class="photo-grid__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+                            <div class="photo-grid__information">
+                                <h2 class="photo-grid__name"> Карачаевск </h2>
+                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
+                            </div>
+                        </li>
 
-                    <div class="photo-grid__container">
-                        <img class="photo-grid__image" src="./images/elbrus.jpg" alt="elbrus">
-                        <div class="photo-grid__information">
-                            <p class="photo-grid__name"> Гора Эльбрус </p>
-                            <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                        </div>
-                    </div>
+                        <li class="photo-grid__container">
+                            <img class="photo-grid__image" src="./images/elbrus.jpg" alt="Эльбрус">
+                         <div class="photo-grid__information">
+                                <h2 class="photo-grid__name"> Гора Эльбрус </h2>
+                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
+                         </div>
+                        </li>
 
-                    <div class="photo-grid__container">
-                        <img class="photo-grid__image" src="./images/dombai.jpg" alt="dombai">
-                        <div class="photo-grid__information">
-                            <p class="photo-grid__name"> Домбай </p>
-                            <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                        </div>
-                    </div>
+                        <li class="photo-grid__container">
+                            <img class="photo-grid__image" src="./images/dombai.jpg" alt="Домбай">
+                            <div class="photo-grid__information">
+                                <h2 class="photo-grid__name"> Домбай </h2>
+                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
+                            </div>
+                        </li>
 
-                    <div class="photo-grid__container">
-                        <img class="photo-grid__image" src="./images/elbrus.jpg" alt="elbrus">
-                        <div class="photo-grid__information">
-                            <p class="photo-grid__name"> Гора Эльбрус </p>
-                            <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                        </div>
-                    </div>
+                        <li class="photo-grid__container">
+                            <img class="photo-grid__image" src="./images/elbrus.jpg" alt="Эльбрус">
+                            <div class="photo-grid__information">
+                                <h2 class="photo-grid__name"> Гора Эльбрус </h2>
+                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
+                            </div>
+                        </li>
 
-                    <div class="photo-grid__container">
-                        <img class="photo-grid__image" src="./images/dombai.jpg" alt="dombai">
-                        <div class="photo-grid__information">
-                            <p class="photo-grid__name"> Домбай </p>
-                            <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                        </div>
-                    </div>
+                        <li class="photo-grid__container">
+                            <img class="photo-grid__image" src="./images/dombai.jpg" alt="Домбай">
+                            <div class="photo-grid__information">
+                                <h2 class="photo-grid__name"> Домбай </h2>
+                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
+                            </div>
+                        </li>
 
-                    <div class="photo-grid__container">
-                        <img class="photo-grid__image" src="./images/karachaevsk.jpg" alt="karachaevo-cherkesia">
-                        <div class="photo-grid__information">
-                            <p class="photo-grid__name"> Карачаево-Черкесия </p>
-                            <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                        </div>
-                    </div>
+                        <li class="photo-grid__container">
+                            <img class="photo-grid__image" src="./images/karachaevsk.jpg" alt="Карачаево-Черкесия">
+                            <div class="photo-grid__information">
+                                <h2 class="photo-grid__name"> Карачаево-Черкесия </h2>
+                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
+                            </div>
+                        </li>
+                    </ul>
                 </section>
 
             </main>
@@ -87,17 +88,16 @@
             </footer>
 
         </div>
-    </div>
 
-    <section class="popup">
-        <form class="popup__container" method="POST">
+    <div class="popup">
+        <form class="popup__container" method="POST" name="Всплывающее окно">
             <button class="popup__close-button" type="button" aria-label="Закрыть попап"></button>
-            <h1 class="popup__title"> Редактировать профиль </h1>
-            <input class="popup__name" placeholder="Имя и фамилия пользователя" type="text">
-            <input class="popup__job" placeholder="Род занятий пользователя" type="text">
+            <h2 class="popup__title"> Редактировать профиль </h2>
+            <input class="popup__name" placeholder="Имя и фамилия пользователя" type="text" name="Имя и фамилия пользователя">
+            <input class="popup__job" placeholder="Род занятий пользователя" type="text" name="Род занятий пользователя">
             <button class="popup__submit-button" type="submit" aria-label="Отправить форму"> Сохранить </button>
         </form>
-    </section>
+    </div>
 
     <script src="./scripts/index.js"></script>
 </body>

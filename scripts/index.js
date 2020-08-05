@@ -11,34 +11,23 @@ function popup_opened() {
 
     popup.classList.add(`popup_opened`);
 
-    if (nameProfile.textContent !== ``) {
-        namePopup.value = nameProfile.textContent;
-    } else {
-        nameProfile.textContent = nameProfile.textContent;
-    }
+    namePopup.value = nameProfile.textContent;
+    jobPopup.value = jobProfile.textContent;
 
-    if (jobProfile.textContent !== ``) {
-        jobPopup.value = jobProfile.textContent;
-    } else {
-        jobProfile.textContent = jobProfile.textContent;
-    }
-    
 }
 
 function popup_closed() {
 
     popup.classList.remove(`popup_opened`);
+
 }
 
 function formSubmitHandler(evt) {
 
     evt.preventDefault();
 
-    let nameInput = namePopup.value;
-    let jobInput = jobPopup.value;
-
-    nameProfile.textContent = nameInput;
-    jobProfile.textContent = jobInput;
+    nameProfile.textContent = namePopup.value;
+    jobProfile.textContent = jobPopup.value;
 
     popup_closed();
 

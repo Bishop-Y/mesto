@@ -1,8 +1,5 @@
 .popup__container{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     width: 430px;
     min-height: 330px;
     background: #FFFFFF;
@@ -18,15 +15,13 @@
 @media screen and (max-width: 615px) {
     .popup__container {
         width: 330px;
-        top: 20%;
-        transform: translate(-50%, -20%);
+        top: -150px;
     }
 }
 
 @media screen and (max-width: 425px) {
     .popup__container {
-        width: 260px;    
-        top: 15%;
-        transform: translate(-50%, -15%);
+        width: 260px;
+        top: -200px;
     }
 }

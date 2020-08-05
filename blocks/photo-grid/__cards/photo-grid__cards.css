@@ -1,0 +1,27 @@
+.photo-grid__cards {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 21px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 882px;
+}
+
+@media screen and (max-width: 905px) {
+    .photo-grid__cards {
+        max-width: 583px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .photo-grid__cards {
+        max-width: 282px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
