@@ -73,9 +73,6 @@ function popupProfileSubmitHandler(evt) {
 
 function popupCard_opened() {
     popupCard.classList.add(`popup_opened`);
-    
-    placePopup.value = ``;
-    linkPopup.value = ``;
 }
 
 function popupCard_closed() {
@@ -115,7 +112,7 @@ function createPhotoCard(name, link) {
         popupViewingImage.src = cardImage.src;
         popupViewingImage.alt = cardImage.alt;
         popupViewingImageTitle.textContent = name;
-    })
+    });
     return photoCardR;
 }
 
