@@ -8,6 +8,7 @@
     width: 330px;
     margin-top: 0px;
     margin-bottom: 54px;
+    padding-right: 32px;
 }
 
 @media screen and (max-width: 615px) {
@@ -15,6 +16,7 @@
         width: 298px;
         font-size: 20px;
         line-height: 25px;
+        padding-right: 0px;
     }
 }
 

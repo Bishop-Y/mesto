@@ -31,53 +31,6 @@
 
                 <section class="photo-grid">
                     <ul class="photo-grid__cards">
-                        <li class="photo-grid__container">
-                            <img class="photo-grid__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                            <div class="photo-grid__information">
-                                <h2 class="photo-grid__name"> Карачаевск </h2>
-                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                            </div>
-                        </li>
-
-                        <li class="photo-grid__container">
-                            <img class="photo-grid__image" src="./images/elbrus.jpg" alt="Эльбрус">
-                         <div class="photo-grid__information">
-                                <h2 class="photo-grid__name"> Гора Эльбрус </h2>
-                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                         </div>
-                        </li>
-
-                        <li class="photo-grid__container">
-                            <img class="photo-grid__image" src="./images/dombai.jpg" alt="Домбай">
-                            <div class="photo-grid__information">
-                                <h2 class="photo-grid__name"> Домбай </h2>
-                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                            </div>
-                        </li>
-
-                        <li class="photo-grid__container">
-                            <img class="photo-grid__image" src="./images/elbrus.jpg" alt="Эльбрус">
-                            <div class="photo-grid__information">
-                                <h2 class="photo-grid__name"> Гора Эльбрус </h2>
-                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                            </div>
-                        </li>
-
-                        <li class="photo-grid__container">
-                            <img class="photo-grid__image" src="./images/dombai.jpg" alt="Домбай">
-                            <div class="photo-grid__information">
-                                <h2 class="photo-grid__name"> Домбай </h2>
-                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                            </div>
-                        </li>
-
-                        <li class="photo-grid__container">
-                            <img class="photo-grid__image" src="./images/karachaevsk.jpg" alt="Карачаево-Черкесия">
-                            <div class="photo-grid__information">
-                                <h2 class="photo-grid__name"> Карачаево-Черкесия </h2>
-                                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
-                            </div>
-                        </li>
                     </ul>
                 </section>
 
@@ -89,15 +42,46 @@
 
         </div>
 
-    <div class="popup">
-        <form class="popup__container" method="POST" name="Всплывающее окно">
-            <button class="popup__close-button" type="button" aria-label="Закрыть попап"></button>
+    <div class="popup popup__profile">
+        <form class="popup__container popup__container-profile" method="POST" name="Всплывающее окно">
+            <button class="popup__close-button popup__close-button_profile" type="button" aria-label="Закрыть попап"></button>
             <h2 class="popup__title"> Редактировать профиль </h2>
             <input class="popup__name" placeholder="Имя и фамилия пользователя" type="text" name="Имя и фамилия пользователя">
             <input class="popup__job" placeholder="Род занятий пользователя" type="text" name="Род занятий пользователя">
             <button class="popup__submit-button" type="submit" aria-label="Отправить форму"> Сохранить </button>
         </form>
     </div>
+
+    <div class="popup popup__add-card">
+        <form class="popup__container popup__container-card" method="POST" name="Всплывающее окно">
+            <button class="popup__close-button popup__close-button_card" type="button" aria-label="Закрыть попап"></button>
+            <h2 class="popup__title"> Новое место </h2>
+            <input class="popup__place" placeholder="Название" type="text" name="Название карточки">
+            <input class="popup__link" placeholder="Ссылка на картинку" type="text" name="Ссылка на картинку">
+            <button class="popup__submit-button" type="submit" aria-label="Отправить форму"> Сохранить </button>
+        </form>
+    </div>
+
+    <div class="popup popup__viewing">
+        <div class="popup__information">
+            <button class="popup__close-button popup__close-button_viewing" type="button" aria-label="Закрыть попап"></button>
+            <img class="popup__photo" src='#' alt="#">
+            <h2 class="popup__photo-title"></h2>
+        </div>
+    </div>
+    
+
+
+    <template id="photo-card">
+        <li class="photo-grid__container">
+            <img class="photo-grid__image" src="#" alt="#">
+            <div class="photo-grid__information">
+                <h2 class="photo-grid__name"></h2>
+                <button class="photo-grid__like-button" type="button" aria-label="Поставить лайк"></button>
+            </div>
+            <button class="photo-grid__delete-button" type="button" aria-label="Удалить карточку"></button>
+         </li>
+    </template>
 
     <script src="./scripts/index.js"></script>
 </body>
