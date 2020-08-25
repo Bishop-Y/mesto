@@ -2,4 +2,12 @@
     width: 282px;
     border-radius: 10px 10px 0px 0px;
     height: 282px;
+    object-fit: cover;
+    transition: opacity linear 1s;
+    opacity: 1;
+}
+
+.photo-grid__image:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
